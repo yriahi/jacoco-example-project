@@ -1,10 +1,10 @@
 pipeline {
     agent any  // Runs on any available agent
 
-    tools { 
-        // Specifies the Maven version
-        maven 'Maven 3.6.3'
-    }
+    // tools { 
+    //     // Specifies the Maven version
+    //     maven 'Maven 3.6.3'
+    // }
 
     stages {
         stage('Checkout') {
