@@ -1,10 +1,12 @@
 pipeline {
-    agent {
-        docker {
-            image 'maven:3.6.3-jdk-11'
-            args '-v /root/.m2:/root/.m2'
+    // agent {
+    //     docker {
+    //         image 'maven:3.6.3-jdk-11'
+    //     }
+    // }
+        agent {
+        label 'docker'
         }
-    }
 
     stages {
         stage('Checkout') {
